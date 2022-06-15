@@ -1,0 +1,54 @@
+:root {
+
+    --main-padding: 5px;
+    --color-box: #4dafc7;
+}
+
+.container {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "header header header header"
+        "nav main main aside"
+        "nav footer footer footer";
+
+    grid-gap: 0.2rem;
+    color: #ffff;
+    
+    text-align: center;
+
+
+}
+
+header {
+    background-color: var(--color-box);
+    grid-area: header;
+    padding: var(--main-padding);
+
+}
+
+nav {
+    background-color: var(--color-box);
+    grid-area: nav;
+    padding: var(--main-padding);
+}
+
+main {
+    background-color: var(--color-box);
+    grid-area: main;
+    padding: var(--main-padding);
+}
+
+aside {
+    background-color: var(--color-box);
+    grid-area: aside;
+    padding: var(--main-padding);
+}
+
+footer {
+    background-color: var(--color-box);
+    grid-area: footer;
+    padding: var(--main-padding);
+}

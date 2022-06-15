@@ -1,0 +1,3 @@
+A resposta correta é a letra C: green
+
+O id sempre vai prevalecer no CSS, ao menos que o estilo esteja definido inline. 
